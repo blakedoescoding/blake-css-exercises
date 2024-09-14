@@ -11,8 +11,27 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px #0000001a;
+  display: flex;
+  justify-content:space-between;
+  padding: 8px;
 }
+.left, .right {
+  /* split up the logo and links to left and notif pfp to right */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ul {
+  /* to make the link items horizontal make them flex */
+
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
 
 .profile-image {
   background: rebeccapurple;
